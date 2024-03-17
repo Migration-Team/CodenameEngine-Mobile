@@ -134,7 +134,7 @@ class SUtil
 	#if android
 	public static function saveContent(fileName:String = 'file', fileExtension:String = '.json', fileData:String = 'you forgot something to add in your code', Path:String = 'Unknown')
 	{
-		createFolder();
+
 		File.saveContent(SUtil.getPath() + 'saves/' + Path + '/' + fileName + fileExtension, fileData);
 		SUtil.applicationAlert('Done !', 'File Saved In ".CodeNameEngine/saves/' + Path + '/' + fileName + fileExtension);
 	}
