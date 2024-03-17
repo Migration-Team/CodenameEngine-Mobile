@@ -68,7 +68,7 @@ class Main extends Sprite
 		CrashHandler.init();
 
 		#if mobile
-		Sys.setCwd(#if (android)Path.addTrailingSlash(#end SUtil.getStorageDirectory()#if (android))#end);
+		Sys.setCwd(#if (android)Path.addTrailingSlash(#end SUtil.getPath()#if (android))#end);
 		#end
 
 		addChild(game = new FunkinGame(gameWidth, gameHeight, MainState, Options.framerate, Options.framerate, skipSplash, startFullscreen));
